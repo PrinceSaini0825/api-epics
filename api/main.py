@@ -18,6 +18,9 @@ from contextlib import asynccontextmanager
 from typing import Literal
 
 import torch
+from fastapi import FastAPI
+
+app = FastAPI()
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
